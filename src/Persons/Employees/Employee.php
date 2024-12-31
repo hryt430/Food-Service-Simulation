@@ -2,7 +2,6 @@
 
 namespace Person\Employees;
 
-
 use Persons\Person;
 
 class Employee extends Person {

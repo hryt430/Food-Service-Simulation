@@ -8,11 +8,11 @@ class Customer extends Person {
     }
 
     public function interestedCategories(Restaurant $restaurant) : array {
-
+        $foodItems = $restaurant->menu;
+        
     }
 
     public function order(Restaurant $restaurant, array $categories) : Invoice {
-        $interest = $this->interestedCategories($restaurant);
-
+        return $restaurant->order($categories);
     }
 }

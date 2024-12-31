@@ -8,6 +8,10 @@ class Chef extends Employee {
     }
 
     public function prepareFood(FoodOrder $order): string {
-        
+        $word = "Chef" . $this->getName() . "is preparing";
+        foreach($order->items as $item){
+            $word .= $item;
+        }
+        return $word;
     }
 }

@@ -12,4 +12,9 @@ abstract class Person {
         $this->age = $age;
         $this->address = $address;
     }
+
+    public function getName(): string {
+        return $this->name;
+    }
+
 }
